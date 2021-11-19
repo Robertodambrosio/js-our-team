@@ -24,12 +24,31 @@ const memberTeam = [   // ***creo l'array object con i membri
 
 console.log(memberTeam);
 
+const card = '';
 
 for (let i = 0; i < memberTeam.length; i++) {
-    console.log(memberTeam[i].name);
-    console.log(memberTeam[i].role);
+    // console.log(memberTeam[i].name);
+    // console.log(memberTeam[i].role);
 
+    // card = document.createElement('div');
+    // card.className = "team-card";
+    // console.log(card);
+    // cardText = document.createElement('div');
+    // cardText.className = "card-text";
+    // cardText.appendChild(card);
+    
+    card.innerHTML += `
+            <div class="team-card">
+                <div class="card-image">
+                </div>
+                <div class="card-text">
+                    <h3>${memberTeam[i].name}</h3>
+                    <p>${memberTeam[i].role}</p>
+                </div>
+            </div>
+        `; 
 
+        console.log(card);
     // for (let k in memberTeam) {
     // console.log(memberTeam[i].name);  
     // }
